@@ -55,6 +55,8 @@ header {
         width: 52px;
         height: 20px;
 
+        cursor: pointer;
+
         &::before {
             content: "";
             background-color: #ffffff;
