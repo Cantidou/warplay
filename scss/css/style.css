@@ -1,0 +1,287 @@
+* {
+  font-family: "Roboto", system-ui;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: Aire Exterior;
+  src: url("/warplay/fonts/AireExterior.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #141C24;
+}
+body h1 {
+  font-weight: 500;
+  font-size: 16px;
+}
+body h3 {
+  font-family: "Aire Exterior";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-top: 11px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: url("/warplay/images/header-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 777px;
+}
+header .logo_container {
+  margin-top: 41px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .text-container {
+  width: 284px;
+  margin-top: 190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header button {
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 251px;
+  height: 61px;
+  -webkit-clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+  font-family: "Aire Exterior";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+header .burger {
+  position: absolute;
+  right: 15px;
+  bottom: 63px;
+  width: 52px;
+  height: 20px;
+}
+header .burger::before {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+}
+header .burger::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+}
+
+.info_list {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.info_list .info_item:nth-child(1n+2) {
+  margin-top: 80px;
+}
+.info_list .info_item h2 {
+  font-weight: 300;
+  font-size: 16px;
+  padding-left: 120px;
+  color: #57D6FF;
+}
+.info_list .info_item h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 10px;
+  left: -84px;
+  width: 50px;
+  height: 1px;
+  background-color: #57D6FF;
+}
+.info_list .info_item h3 {
+  font-size: 39px;
+  margin-top: 17px;
+}
+.info_list .info_item p {
+  font-weight: 300;
+  font-size: 21.33px;
+  line-height: 32px;
+  color: #ABABAB;
+  margin-top: 28px;
+}
+.info_list .info_item p:first-of-type {
+  margin-top: 61px;
+}
+.info_list .info_item .cloud_img {
+  width: 100%;
+  height: 100%;
+}
+.info_list .info_item div {
+  text-align: center;
+}
+.info_list .info_item div a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #00C5FF;
+  border-bottom: 1px solid #00C5FF;
+  margin-top: 61px;
+}
+.info_list .item_start h3 {
+  text-align: center;
+}
+.info_list .item_start .item_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  margin-top: 89px;
+}
+.info_list .item_start .item_wrapper .item_wrapper_block {
+  width: 50%;
+}
+.info_list .item_start .item_wrapper .item_wrapper_block:nth-child(1n+3) {
+  margin-top: 60px;
+}
+.info_list .item_start .item_wrapper .item_wrapper_block p {
+  margin-top: 0px;
+}
+.info_list .item_sub .sub {
+  height: 543px;
+  background: #1F2631;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-top: 58px;
+}
+.info_list .item_sub .sub div {
+  padding: 76px 24px 39px 24px;
+}
+.info_list .item_sub .sub h4 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+.info_list .item_sub .sub p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+.info_list .item_sub .sub h5 {
+  margin-top: 20px;
+}
+.info_list .item_sub .sub h5, .info_list .item_sub .sub li {
+  font-weight: 300;
+  font-size: 21.33px;
+  line-height: 32px;
+  color: #ABABAB;
+}
+.info_list .item_sub .sub button {
+  width: 100%;
+  height: 62px;
+  background: #00C5FF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Aire Exterior";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+  color: #141C24;
+  margin-top: 51px;
+}
+.info_list .item_sub .sub_max {
+  background: #00C5FF;
+}
+.info_list .item_sub .sub_max h4, .info_list .item_sub .sub_max p {
+  color: #141C24;
+}
+.info_list .item_sub .sub_max li, .info_list .item_sub .sub_max h5 {
+  color: #000000;
+}
+.info_list .item_sub .sub_max button {
+  background: #141C24;
+  color: #F1F8FF;
+}
+.info_list .item_browser img {
+  width: 100%;
+  margin-top: 21px;
+}
+.info_list .item_map h3 {
+  text-align: center;
+}
+.info_list .item_map img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 458px;
+  background: #171717;
+}
+footer .social_box ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 84px;
+  margin-bottom: 30px;
+}
+footer .social_box li {
+  margin-right: 10px;
+}
+footer .footer_info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .footer_info a {
+  color: #ABABAB;
+}
+footer .footer_info a:nth-child(1n+2) {
+  margin-top: 22px;
+}
+footer .copyright_block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
+footer .copyright_block img {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .copyright_block .logo {
+  width: 211px;
+  height: 37px;
+}

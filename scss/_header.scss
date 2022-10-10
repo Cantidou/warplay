@@ -1,0 +1,77 @@
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    background-image: url("/warplay/images/header-background-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 777px;
+
+    .logo_container {
+        margin-top: 41px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-container {
+        width: 284px;
+    
+        margin-top: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 251px;
+        height: 61px;
+            
+        clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+        
+        font-family: 'Aire Exterior';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+
+        background-color: #FFFFFF;
+        border: none;
+        color: #000000;
+        cursor: pointer;
+    }
+
+    .burger {
+        position: absolute;
+        right: 15px;
+        bottom: 63px;
+    
+        width: 52px;
+        height: 20px;
+
+        &::before {
+            content: "";
+            background-color: #ffffff;
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            left: 0;
+        }
+
+        &::after {
+            content: "";
+            background-color: #ffffff;
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}

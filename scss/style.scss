@@ -1,0 +1,41 @@
+* {
+    font-family: 'Roboto', system-ui;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: Aire Exterior;
+    src: url("/warplay/fonts/AireExterior.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #141C24;
+    
+    h1 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-family: 'Aire Exterior';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+    
+        margin-top: 11px;
+    }
+}
+
+@import "_header";
+@import "_main";
+@import "_footer";
+
