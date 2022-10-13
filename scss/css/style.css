@@ -1,6 +1,5 @@
 * {
   font-family: "Roboto", system-ui;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -95,6 +94,60 @@ header .burger::after {
   height: 5px;
   left: 0;
   bottom: 0;
+}
+
+.nav_block {
+  display: none;
+  position: fixed;
+  background-color: #141C24;
+  width: 100%;
+  height: 894px;
+  z-index: 1;
+}
+.nav_block .nav_wrapper {
+  padding: 0 30px;
+}
+.nav_block .logo_container {
+  text-align: center;
+}
+.nav_block .nav_list {
+  margin-top: 108px;
+}
+.nav_block .nav_list .nav_list_item {
+  text-align: center;
+  margin-top: 30px;
+}
+.nav_block .nav_list .nav_list_item a {
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ABABAB;
+}
+.nav_block .nav_list .nav_list_item a:hover {
+  color: #FFFFFF;
+  border-bottom: 1px solid #00C5FF;
+}
+.nav_block .social_box {
+  text-align: center;
+  width: 100%;
+  margin-top: 143px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #FFFFFF;
+}
+.nav_block .social_box a {
+  display: inline-block;
+}
+.nav_block .social_box a:nth-child(2) {
+  margin: 0 24px;
+}
+.nav_block .social_box a img {
+  height: 41px;
+}
+.nav_block .arrow {
+  display: block;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
 }
 
 .info_list {
@@ -285,4 +338,112 @@ footer .copyright_block img, footer .copyright_block a {
 footer .copyright_block .logo {
   width: 211px;
   height: 37px;
+}
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #141C24;
+}
+.login .arrow {
+  position: absolute;
+  top: 62px;
+  left: 38px;
+}
+.login .login_form {
+  margin: 136px 18px 79px 18px;
+}
+.login .login_form .login_change span {
+  margin-left: 37px;
+  font-family: "Aire Exterior";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.login .login_form .login_change .login_change_active {
+  opacity: 1;
+}
+.login .login_form .login_change input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 75px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding-left: 21px;
+  font-family: "Aire Exterior";
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+.login .login_form .login_change input:first-of-type {
+  margin-top: 51px;
+}
+.login .login_form button {
+  display: block;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 251px;
+  height: 61px;
+  -webkit-clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+  font-family: "Aire Exterior";
+  font-size: 24px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+.login .login_form .checkbox_group {
+  display: flex;
+  margin-top: 32px;
+}
+.login .login_form .checkbox_group input {
+  min-width: 24px;
+  height: 24px;
+}
+.login .login_form .checkbox_group label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.5;
+  margin-left: 16px;
+}
+.login .login_form .social_block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 68px;
+}
+.login .login_form .social_block h5 {
+  font-weight: 200;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.login .login_form .social_block .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 210px;
+}
+.login .login_form .social_block .social .social_item {
+  width: 25px;
+  height: 25px;
+  margin-top: 13px;
+}
+.login .login_form .social_block .social .social_item:nth-child(1n+2) {
+  margin-left: 19px;
+}
+.login .login_form .social_block .social .social_item:nth-child(6) {
+  margin-left: 0;
 }

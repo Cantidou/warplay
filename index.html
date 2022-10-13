@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warplay.cloud</title>
     <link rel="stylesheet" href="/warplay/scss/css/style.css">
+    <link rel="stylesheet" href="/warplay/scss/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -21,6 +22,30 @@
         </div>
         <button>Upgrade</button>
         <div class="burger">
+        </div>
+        <div class="nav_block hidden">
+            <div class="nav_wrapper">
+                <div class="logo_container">
+                    <a href="#"><img src="svg/logo.svg" alt="Логотип" class="logo"></a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_list_item"><a href="#">Главная</a></li>
+                        <li class="nav_list_item"><a href="#">Сервера</a></li>
+                        <li class="nav_list_item"><a href="#">Скачать</a></li>
+                        <li class="nav_list_item"><a href="#">Открыть в браузере</a></li>
+                        <li class="nav_list_item"><a href="#">Цены</a></li>
+                        <li class="nav_list_item"><a href="#">Тех поддержка</a></li>
+                        <li class="nav_list_item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="social_box">
+                    <a href="#" class="vk"><img src="svg/VK com.svg" alt=""></a>
+                    <a href="#" class="discord"><img src="svg/Discord.svg" alt=""></a>
+                    <a href="#" class="youtube"><img src="svg/YouTube.svg" alt=""></a>
+                </div>
+                <img class="arrow" src="/warplay/svg/Arrow.svg" alt="back">
+            </div> 
         </div>
     </header>
     <main>
@@ -143,5 +168,41 @@
             <img src="svg/Design by desart.svg" alt="design" class="design">
         </div>
     </footer>
+    <div class="login">
+        <img width="25px" height="25px" class="arrow" src="/warplay/svg/Arrow.svg" alt="arrow">
+        <form class="login_form">
+            <label class="login_change">
+                <span class="login_change_register login_change_active">Регистрация</span>
+                <span class="login_change_login">Вход</span>
+                <input type="email" placeholder="Почта/телефон">
+                <input type="text" placeholder="Пароль">
+            </label>
+            <button type="submit">Зарегистрироваться</button>
+            <div class="checkbox_group">
+                <input type="checkbox">
+                <label>Я соглашаюсь со следующими установленными правилами: 
+                Политика использования файлов cookie WARPLAY.CLOUD, 
+                Пользовательское соглашение WARPLAY.CLOUD, 
+                Лицензионное соглашение MY.GAMES с конечным пользователем в отношении Игр, 
+                Лицензионное соглашение с конечным Пользователем для WARPLAY.CLOUD Игрового центра, 
+                Политика конфиденциальности портала WARPLAY.CLOUD,
+                Политика конфиденциальности портала WARPLAY.CLOUD для детей
+                </label>
+            </div>
+            <div class="social_block">
+                <h5>Войти через</h5>
+                <ul class="social">
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/Mail_ru.svg" alt="mail"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/VK.svg" alt="vk"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/OK.svg" alt="ok"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/Facebook.svg" alt="fb"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/Google.svg" alt="google"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/Twitch.svg" alt="twitch"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/Twitter.svg" alt="twitter"></a></li>
+                    <li class="social_item"><a href="#"><img src="/warplay/svg/social_icons/Apple.svg" alt="apple"></a></li>
+                </ul>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
