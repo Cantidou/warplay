@@ -12,24 +12,30 @@ aside {
     overflow: auto;
 
     .contacts {
-        display: none;
-        width: 172px;
+        //display: none;
+
+        width: 280px;
 
         margin-left: auto;
         margin-right: auto;
         margin-top: 134px;
 
-        .arrow {
-            position: absolute;
-            top: 62px;
-            left: 60px
-        }
+        .contacts_header_block {
+            position: relative;
 
-        h2 {
-            font-family: 'Aire Exterior';
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 48px;
+            .arrow {
+                position: absolute;
+                top: -82px;
+                left: 30px;
+            }
+    
+            h2 {
+                text-align: center;
+                font-family: 'Aire Exterior';
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 48px;
+            }
         }
 
         ul {
@@ -45,7 +51,7 @@ aside {
     }
 
     .download {
-        //display: none;
+        display: none;
         margin: 142px 48px 128px 48px;
 
         .download_header_block {
@@ -80,10 +86,13 @@ aside {
     aside {
         .contacts {
             margin-top: 227px;
-    
-            .arrow {
-                top: 238px;
-                left: 597px;
+
+            .contacts_header_block {
+
+                .arrow {
+                    top: 10px;
+                    left: 0px;
+                }
             }
         }
 
@@ -91,13 +100,14 @@ aside {
             margin-top: 314px;
 
             .download_header_block {
+                width: 730px;
+
+                margin-left: auto;
+                margin-right: auto;
+
                 .arrow {
-                    top: 0;
+                    top: 10px;
                     left: 0;
-                }
-        
-                h2 {
-                    text-align: center;
                 }
             }
     

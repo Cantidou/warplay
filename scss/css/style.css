@@ -146,6 +146,7 @@ header .burger::after {
 .nav_block {
   display: none;
   position: fixed;
+  top: 0;
   background-color: #141C24;
   width: 100%;
   height: 100%;
@@ -198,7 +199,7 @@ header .burger::after {
   cursor: pointer;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 1201px) {
   .nav_block {
     position: absolute;
     top: 0;
@@ -532,18 +533,21 @@ aside {
   overflow: auto;
 }
 aside .contacts {
-  display: none;
-  width: 172px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 134px;
 }
-aside .contacts .arrow {
-  position: absolute;
-  top: 62px;
-  left: 60px;
+aside .contacts .contacts_header_block {
+  position: relative;
 }
-aside .contacts h2 {
+aside .contacts .contacts_header_block .arrow {
+  position: absolute;
+  top: -82px;
+  left: 30px;
+}
+aside .contacts .contacts_header_block h2 {
+  text-align: center;
   font-family: "Aire Exterior";
   font-weight: 400;
   font-size: 48px;
@@ -558,6 +562,7 @@ aside .contacts ul li:nth-child(2) {
   margin: 0 24px;
 }
 aside .download {
+  display: none;
   margin: 142px 48px 128px 48px;
 }
 aside .download .download_header_block {
@@ -586,19 +591,21 @@ aside .download ul li:nth-child(1n+2) {
   aside .contacts {
     margin-top: 227px;
   }
-  aside .contacts .arrow {
-    top: 238px;
-    left: 597px;
+  aside .contacts .contacts_header_block .arrow {
+    top: 10px;
+    left: 0px;
   }
   aside .download {
     margin-top: 314px;
   }
-  aside .download .download_header_block .arrow {
-    top: 0;
-    left: 0;
+  aside .download .download_header_block {
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  aside .download .download_header_block h2 {
-    text-align: center;
+  aside .download .download_header_block .arrow {
+    top: 10px;
+    left: 0;
   }
   aside .download ul {
     display: flex;
