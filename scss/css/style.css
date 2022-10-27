@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: Aire Exterior;
-  src: url("fonts/AireExterior.ttf");
+  src: url("../../fonts/AireExterior.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -48,7 +48,7 @@ header .header_container {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url("images/header-background-mobile.png");
+  background-image: url("../../images/header-background-mobile.png");
   background-repeat: no-repeat;
   background-size: auto 774px;
   margin-left: auto;
@@ -128,7 +128,7 @@ header .burger::after {
     border-radius: 24px;
   }
   header .header_container {
-    background-image: url("images/header-background-desktop.png");
+    background-image: url("../../images/header-background-desktop.png");
     background-size: auto 774px;
     max-width: 1309px;
     max-height: 774px;

@@ -25,7 +25,7 @@ header {
         flex-direction: column;
         position: relative;
 
-        background-image: url("images/header-background-mobile.png");
+        background-image: url("../../images/header-background-mobile.png");
         background-repeat: no-repeat;
         background-size: auto 774px;
 
@@ -129,7 +129,7 @@ header {
         }
         
         .header_container {
-            background-image: url("images/header-background-desktop.png");
+            background-image: url("../../images/header-background-desktop.png");
             background-size: auto 774px;
 
             max-width: 1309px;
