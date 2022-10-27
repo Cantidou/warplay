@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Aire Exterior;
-    src: url("/warplay/fonts/AireExterior.ttf");
+    src: url("/fonts/AireExterior.ttf");
     font-weight: 400;
     font-style: normal;
 }
@@ -37,5 +37,6 @@ body {
 @import "_header";
 @import "_menu";
 @import "_main";
+@import "_aside";
 @import "_footer";
-@import "_login"
+@import "_login";

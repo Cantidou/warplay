@@ -1,0 +1,115 @@
+aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #141C24;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+
+    .contacts {
+        display: none;
+        width: 172px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 134px;
+
+        .arrow {
+            position: absolute;
+            top: 62px;
+            left: 60px
+        }
+
+        h2 {
+            font-family: 'Aire Exterior';
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 34px;
+
+            li:nth-child(2) {
+                margin: 0 24px;
+            }
+        }
+    }
+
+    .download {
+        //display: none;
+        margin: 142px 48px 128px 48px;
+
+        .download_header_block {
+            position: relative;
+
+            .arrow {
+                position: absolute;
+                top: -65px;
+                left: 0px;
+            }
+    
+            h2 {
+                font-family: 'Aire Exterior';
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 48px;
+            }
+        }
+
+        ul {
+            text-align: center;
+            margin-top: 70px;
+
+            li:nth-child(1n + 2) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    aside {
+        .contacts {
+            margin-top: 227px;
+    
+            .arrow {
+                top: 238px;
+                left: 597px;
+            }
+        }
+
+        .download {
+            margin-top: 314px;
+
+            .download_header_block {
+                .arrow {
+                    top: 0;
+                    left: 0;
+                }
+        
+                h2 {
+                    text-align: center;
+                }
+            }
+    
+            ul {
+                display: flex;
+                justify-content: center;
+    
+                li:nth-child(1n + 2) {
+                    margin-top: 0;
+                    margin-left: 61px;
+                }
+            }
+        }
+    }
+}
