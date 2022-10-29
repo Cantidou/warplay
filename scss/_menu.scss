@@ -1,12 +1,12 @@
 .nav_block {
-    display: none;
     position: fixed;
     top: 0;
-
-    background-color: #141C24;
+    left: -100%;
 
     width: 100%;
     height: 100%;
+
+    background-color: #141C24;
 
     z-index: 1;
 
@@ -78,8 +78,10 @@
 
 @media (min-width: 1201px) {
     .nav_block {
+        display: block;
         position: absolute;
-        top: 0;
+        top: -124px;
+        left: 0;
 
         width: 100%;
         height: 123px;
@@ -113,7 +115,7 @@
             nav {
                 margin-top: auto;
                 margin-bottom: auto;
-                margin-right: 171px;
+                margin-right: 124px;
 
                 width: 100%;
             }
@@ -133,7 +135,12 @@
             }
 
             .arrow {
-                display: none;
+                width: 25px;
+                height: 25px;
+
+                margin-top: auto;
+                margin-right: 47px;
+                margin-bottom: auto;
             }
         }
     }

@@ -1,8 +1,7 @@
 aside {
-    display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
 
     background-color: #141C24;
 
@@ -12,7 +11,7 @@ aside {
     overflow: auto;
 
     .contacts {
-        //display: none;
+        display: none;
 
         width: 280px;
 
@@ -23,10 +22,12 @@ aside {
         .contacts_header_block {
             position: relative;
 
-            .arrow {
+            .arrow_contacts {
                 position: absolute;
                 top: -82px;
                 left: 30px;
+
+                cursor: pointer;
             }
     
             h2 {
@@ -57,10 +58,12 @@ aside {
         .download_header_block {
             position: relative;
 
-            .arrow {
+            .arrow_download {
                 position: absolute;
                 top: -65px;
                 left: 0px;
+
+                cursor: pointer;
             }
     
             h2 {
@@ -97,6 +100,7 @@ aside {
         }
 
         .download {
+            text-align: center;
             margin-top: 314px;
 
             .download_header_block {

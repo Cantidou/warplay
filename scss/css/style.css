@@ -144,12 +144,12 @@ header .burger::after {
   }
 }
 .nav_block {
-  display: none;
   position: fixed;
   top: 0;
-  background-color: #141C24;
+  left: -100%;
   width: 100%;
   height: 100%;
+  background-color: #141C24;
   z-index: 1;
   overflow: auto;
 }
@@ -201,8 +201,10 @@ header .burger::after {
 
 @media (min-width: 1201px) {
   .nav_block {
+    display: block;
     position: absolute;
-    top: 0;
+    top: -124px;
+    left: 0;
     width: 100%;
     height: 123px;
     border-bottom: 1px dashed #ABABAB;
@@ -227,7 +229,7 @@ header .burger::after {
   .nav_block .nav_wrapper nav {
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 171px;
+    margin-right: 124px;
     width: 100%;
   }
   .nav_block .nav_wrapper .nav_list {
@@ -242,7 +244,11 @@ header .burger::after {
     display: none;
   }
   .nav_block .nav_wrapper .arrow {
-    display: none;
+    width: 25px;
+    height: 25px;
+    margin-top: auto;
+    margin-right: 47px;
+    margin-bottom: auto;
   }
 }
 .info_list {
@@ -523,16 +529,16 @@ header .burger::after {
   }
 }
 aside {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   background-color: #141C24;
   width: 100%;
   height: 100%;
   overflow: auto;
 }
 aside .contacts {
+  display: none;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -541,10 +547,11 @@ aside .contacts {
 aside .contacts .contacts_header_block {
   position: relative;
 }
-aside .contacts .contacts_header_block .arrow {
+aside .contacts .contacts_header_block .arrow_contacts {
   position: absolute;
   top: -82px;
   left: 30px;
+  cursor: pointer;
 }
 aside .contacts .contacts_header_block h2 {
   text-align: center;
@@ -568,10 +575,11 @@ aside .download {
 aside .download .download_header_block {
   position: relative;
 }
-aside .download .download_header_block .arrow {
+aside .download .download_header_block .arrow_download {
   position: absolute;
   top: -65px;
   left: 0px;
+  cursor: pointer;
 }
 aside .download .download_header_block h2 {
   font-family: "Aire Exterior";
@@ -596,6 +604,7 @@ aside .download ul li:nth-child(1n+2) {
     left: 0px;
   }
   aside .download {
+    text-align: center;
     margin-top: 314px;
   }
   aside .download .download_header_block {
