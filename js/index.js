@@ -8,6 +8,8 @@ function showElements() {
     const arrowDownload = document.getElementById('arrowDownload');
     const contacts = document.getElementsByClassName('contacts');
     const arrowContacts = document.getElementById('arrowContacts');
+    const login = document.getElementsByClassName('login');
+    const arrowLogin = document.getElementsByClassName('arrow_login');
 
 //Управление навигацией
     navListItem.forEach(element => {
@@ -103,6 +105,7 @@ function showElements() {
             }
         })
     });
+
 //Кнопочки, стрелочки
     burger[0].addEventListener('click', e => {
         if (navigation[0].classList.value === "nav_block hidden" && document.documentElement.clientWidth > 1201) {
@@ -125,7 +128,9 @@ function showElements() {
             navigation[0].style = 'transform: translateX(-100%); transition: transform 0.2s ease-in-out;';
         }
     })
+
 //Кнопки на странице
+    //Загрузить
     document.getElementById('download').onclick = (e) => {
         e.preventDefault();
         if (download[0].classList.value === 'download hidden') {
@@ -143,9 +148,67 @@ function showElements() {
             })
         }
     }
+    //Начать
+    document.getElementById('start').onclick = (e) => {
+        e.preventDefault();
+        if (login[0].classList.value === 'login hidden') {
+            login[0].classList.remove('hidden');
+            login[0].style = 'transform: translateX(100%); transition: transform 0.2s ease-in-out;';
+            arrowLogin[0].addEventListener('click', e => {
+                login[0].classList.add('hidden');
+                login[0].style = 'transform: translateX(-100%); transition: transform 0.2s ease-in-out;';
+            })
+        }
+    }
+    //Подписки
+    Array.from(document.getElementsByClassName('sub_button')).forEach(item => {
+        item.onclick = (e) => {
+            if (login[0].classList.value === 'login hidden') {
+                login[0].classList.remove('hidden');
+                login[0].style = 'transform: translateX(100%); transition: transform 0.2s ease-in-out;';
+                arrowLogin[0].addEventListener('click', e => {
+                    login[0].classList.add('hidden');
+                    login[0].style = 'transform: translateX(-100%); transition: transform 0.2s ease-in-out;';
+                })
+            }
+        }
+    })
 }
 
 showElements();
+
+//Элементы формы
+function formChange () {
+    const loginChange = Array.from(document.getElementsByClassName('login_change'));
+    const signInCheckbox = document.getElementsByClassName('sign_in_checkbox')[0];
+    const checkboxGroup = document.getElementsByClassName('checkbox_group')[0];
+    const buttonContainer = document.getElementsByClassName('button_container')[0];
+    const formButton = document.getElementById('formButton');
+    
+    loginChange.forEach(item => {
+        item.onclick = (e) => {
+            loginChange.forEach(el => el.classList.remove('login_change_active'));
+            if (!item.classList.contains('login_change_active')) {
+                item.classList.add('login_change_active');
+                if (item.classList.contains('sign_in')) {
+                    signInCheckbox.style = 'display: flex;';
+                    checkboxGroup.style = 'display: none;';
+                    buttonContainer.style = 'justify-content: space-between;';
+                    formButton.style = 'margin: 0;';
+                    formButton.innerText = 'Войти';
+                } else {
+                    signInCheckbox.style = 'display: none;';
+                    checkboxGroup.style = 'none';
+                    buttonContainer.style = 'none';
+                    formButton.style = 'none';
+                    formButton.innerText = 'Зарегистрироваться';
+                }
+            }
+        }
+    });
+}
+
+formChange();
 
 //Переключение бэкграунда
 let currentBackgroundImage = 0;
@@ -170,7 +233,7 @@ function newBackgroundImages () {
     }
 }
 
-setInterval(newBackgroundImages, 5000);
+setInterval(newBackgroundImages, 6000);
 
 
 //Временно

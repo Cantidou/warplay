@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#">Начать</a>
+                    <a id="start" href="#">Начать</a>
                 </div>
             </div>
             <div class="info_item item_sub">
@@ -235,16 +235,22 @@
     <div class="login hidden">
         <section class="form">
             <form class="login_form">
-                <label class="login_change">
+                <label class="login_change_label">
                     <div>
-                        <img width="25px" height="25px" class="arrow" src="svg/Arrow.svg" alt="arrow">
-                        <span class="login_change_register login_change_active">Регистрация</span>
-                        <span class="login_change_login">Вход</span>    
+                        <img class="arrow_login" width="25px" height="25px" class="arrow" src="svg/Arrow.svg" alt="arrow">
+                        <span class="login_change register login_change_active">Регистрация</span>
+                        <span class="login_change sign_in">Вход</span>    
                     </div>
-                    <input type="email" placeholder="Почта/телефон">
-                    <input type="text" placeholder="Пароль">
+                    <input type="email" placeholder="Почта/телефон" required>
+                    <input type="text" placeholder="Пароль" required>
                 </label>
-                <button type="submit">Зарегистрироваться</button>
+                <div class="button_container">
+                    <button id="formButton" type="submit">Зарегистрироваться</button>
+                    <div class="sign_in_checkbox">
+                        <input type="checkbox">
+                        <label for="checkbox">Запомнить</label>
+                    </div>
+                </div>
                 <div class="checkbox_group">
                     <input type="checkbox">
                     <label>Я соглашаюсь со следующими установленными правилами: 
