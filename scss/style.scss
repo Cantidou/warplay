@@ -34,6 +34,10 @@ body {
     }
 }
 
+@media (max-width: 1201px) {
+    ::-webkit-scrollbar { width: 0;}
+}
+
 @import "_header";
 @import "_menu";
 @import "_main";

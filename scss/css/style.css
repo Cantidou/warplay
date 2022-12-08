@@ -30,6 +30,11 @@ body h3 {
   margin-top: 11px;
 }
 
+@media (max-width: 1201px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
 header::before {
   content: "";
   box-sizing: border-box;
